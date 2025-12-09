@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="container">
+        <div class="inputs">
+            <input type="text" id="searchInput" placeholder="Enter city name" spellcheck="false">
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="getLocationBtn">GetLocation</button>
+        </div>
+        <div class="loading-img-container">
+            <img src="./images/pattern-18010_512.gif" alt="loading gif" width="200px" class="loading">
+        </div>
+
+        <div class="outputs">
+            <div class="flag-img">
+                <img src="" alt="Country-flag" id="fg">
+                <p class="country"></p>
+            </div>
+
+            <div class="info-container1">
+                <div class="lat-long">
+                    <p id="showlatlong"></p>
+                </div>
+                <div class="callingcode">
+                    <p id="callcode"></p>
+                </div>
+            </div>
+
+            <div class="info-container2">
+                <div class="sunrise">
+                    <img src="./images/sunrise.png" alt="Sunrise-img" width="70px" class="sunimage">
+                    <p id="rise"></p>
+                </div>
+                <div class="timezone"></div>
+                <div class="sunset">
+                    <img src="./images/sunset.png" alt="Sunrise-img" width="70px" class="sunimage">
+                    <p id="set"></p>
+                </div>
+            </div>
+            <address id="add"></address>
+        </div>
+
+        <div class="outputs2">
+
+            <div class="main-content">
+                <img src="" alt="Weather-img" id="weatherImage">
+                <p id="weatherInfo"></p>
+            </div>
+
+            <div class="mid-content">
+                <div class="temperature">
+                <p id="temperature"></p>
+                </div>
+                <div class="temperature-minmax">
+                    <p id="minTemp"></p>
+                    <p id="maxTemp"></p>
+                </div>
+            </div>
+
+            <div class="last-content">
+                <div class="wind">
+                    <img src="./images/wind.png" alt="Wind-image" width="70px" class="last-img">
+                    <p id="windSpeed"></p>
+                </div>
+                <div class="name">
+                    <p id="cityCname"></p>
+                </div>
+                <div class="humidity">
+                    <img src="./images/humidity.png" alt="Wind-image" width="70px" class="last-img">
+                    <p id="humidityLevel"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/26c9130a11.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+https://opencagedata.com/api
+https://openweathermap.org/current
+https://openweathermap.org/weather-conditions#Icon-list
+https://api.opencagedata.com/geocode/v1/json?q=23.111270%2C+72.535245&key=84b56e1dbc7049918d28f7460f1de8d2
+https://flagsapi.com/#quick
+https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=b2d149978dce29170ca17a41bf5e2c35
+https://api.openweathermap.org/data/2.5/weather?lat=23.111270&lon=72.535245&appid=b2d149978dce29170ca17a41bf5e2c35-->
