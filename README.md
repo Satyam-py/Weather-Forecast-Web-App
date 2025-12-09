@@ -84,7 +84,6 @@
         <img alt="geo" src="https://github.com/user-attachments/assets/3b3372c2-2589-49b1-b6d5-e0decfcc7c38" style="max-width:100%; border:1px solid #eee; border-radius:6px;">
       </div>
     </div>
-
     <div>
       <strong>Using the search bar</strong>
       <div style="margin-top:6px;">
@@ -106,5 +105,4 @@
 
   <hr style="border:none; height:1px; background:#eee; margin:20px 0;">
 
-  <p style="font-size:13px;color:#666;">Want this prettier or converted into a GitHub Pages site (full HTML/CSS + JS)? I can help convert it to a static demo page.</p>
-</div>
+
